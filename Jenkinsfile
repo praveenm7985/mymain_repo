@@ -1,11 +1,13 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-            stage('Git') {
-                steps {
-                    echo 'my first scrpting'
-                }
-                
+        stage('Git Build') {
+            steps { echo '**** Git BUild Start ****' }
+        }
+
+        stage('Maven Build') {
+            steps {echo '***** Maven BUild with ****'}
+        }
     }
-    }
+
 }
