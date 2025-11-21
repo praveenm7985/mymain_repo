@@ -1,11 +1,11 @@
 pipeline {
-  agen any {
-    stages {
-      stage {
-        step{
-          
+    agent any {
+        stages {
+            stage{ ('Build')
+
+                step ('stage step')
+            }
         }
-      }
+
     }
-  }
 }
