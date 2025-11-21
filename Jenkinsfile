@@ -13,4 +13,5 @@ pipeline {
                     echo 'step 3'
         }        
     }
-
+    }
+}
