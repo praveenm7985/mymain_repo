@@ -2,14 +2,14 @@ pipeline {
     agen any 
     stages {
             stage('Git') {
-                step {
+                steps {
                     echo 'my first scrpting'
                 }
-                step {
+                steps {
                     echo 'step2'
             
             }
-                step {
+                steps {
                     echo 'step 3'
         }        
     }
