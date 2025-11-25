@@ -3,7 +3,7 @@ pipeline {
      stages {
         stage ('GIT Pull stage')
         {
-            steps { echo '****Git pull***'
+            steps {
             git url: 'https://github.com/praveenm7985/simple-java-maven-app.git'
                   }
         }
@@ -11,8 +11,8 @@ pipeline {
         stage ('Deploy step start')
 
         {
-            steps {echo '***Deploy stage started'
-            bat 'mvn clean package'
+            steps {
+            bat 'mvn package'
                   }
         }
      }
