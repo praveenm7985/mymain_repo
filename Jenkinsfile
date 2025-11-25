@@ -11,8 +11,9 @@ pipeline {
         stage ('Deploy step start')
 
         {
-            steps {echo '***Deploy stage started'}
+            steps {echo '***Deploy stage started'
             bat 'mvn clean package'
+                  }
         }
      }
 }
