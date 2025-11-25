@@ -4,7 +4,7 @@ pipeline {
         stage ('GIT Pull stage')
         {
             steps { echo '****Git pull***'}
-            git 'https://github.com/praveenm7985/simple-java-maven-app.git'
+            git url: 'https://github.com/praveenm7985/simple-java-maven-app.git'
         
         }
 
