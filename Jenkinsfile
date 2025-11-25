@@ -1,9 +1,10 @@
 pipeline {
     agent any
      stages {
-        stage ('BUild stage')
+        stage ('GIT Pull stage')
         {
-            steps { echo '****Build Stage started ***'}
+            steps { echo '****Git pull***'}
+            git 'https://github.com/praveenm7985/simple-java-maven-app.git'
         
         }
 
@@ -11,6 +12,7 @@ pipeline {
 
         {
             steps {echo '***Deploy stage started'}
+            mvn package
         }
      }
 }
