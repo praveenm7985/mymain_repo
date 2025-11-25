@@ -12,7 +12,7 @@ pipeline {
 
         {
             steps {echo '***Deploy stage started'}
-            mvn package
+            bat 'mvn clean package'
         }
      }
 }
